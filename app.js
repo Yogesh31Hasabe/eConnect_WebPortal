@@ -4,7 +4,7 @@ const path = require("path");
 // const bodyparser = require("body-parser");
 const mongoose = require("mongoose");
 mongoose.connect('mongodb://localhost:27017/eConnectOrder', {useNewUrlParser: true, useUnifiedTopology: true});
-const port = 80;
+var port = process.env.PORT || 8000;
 
 //MONGODB SPECIFIC STUFF
 //Defining Mongoose Schema
