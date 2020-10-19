@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-// const bodyparser = require("body-parser");
+const bodyparser = require("body-parser");
 const mongoose = require("mongoose");
 mongoose.connect('mongodb://localhost:27017/eConnectOrder', {useNewUrlParser: true, useUnifiedTopology: true});
+//PORT
 var port = process.env.PORT || 8000;
 
 //MONGODB SPECIFIC STUFF
